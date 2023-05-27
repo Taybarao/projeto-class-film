@@ -1,4 +1,5 @@
 @import url(contato.css);
+@import url(galeria.css);
 
 
 @font-face {
@@ -18,7 +19,11 @@
 }
 
 body {
-    background-color: #000000a6;
+
+    background-image: url(fts/must.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     font-family: 'Open Sans', 'icones', sans-serif;
 
 }
@@ -39,9 +44,19 @@ body {
 
 
 .check-bt:checked ~ .list-menu{
-    margin-left: 0; 
-    transition: 1s;
+    margin-left: 55%; 
+    transition: 1.5s;
+    opacity: 100%;
 }
+
+.check-bt:checked ~ .menu-ativo > .bt-menu{
+    background-image:url(fts/Menu\ Aberto.svg);
+    border:2px solid red;
+    box-sizing: border-box;
+    
+    
+}
+
 
 
 
@@ -60,34 +75,42 @@ body {
     display: none;  
 }
 
+
+
 .list-menu{
-    display: flex;
-    justify-content: space-around;
+    display: none;
+    flex-direction: column;
     align-items: center;
     text-transform: uppercase;
-    background-color: #000000;
     font-size: 16px;
-    width: 100vw;
-    height: 60px;
-    color:white;
+    width: 45%;
+    height: fit-content;
+    color:rgb(255, 255, 255);
     position: absolute;
     top: 100%;
-    margin-left: -300%;
-    opacity: 100;
-    box-shadow: inset 5px 0px 25px  rgba(142, 120, 196, 0.445); 
+    margin-left: 30%;
+    opacity: 0%;
     
     
-   }
-
-   .list-menu:hover{
-    transition: 1s;
-    text-shadow: 1px 1px 1px white;
-    box-shadow: inset 5px 0px 25px  rgba(121, 85, 0, 0.239); 
+    
    }
 
 
    .menu-item{
-    padding: 20px;
+    background-color: #000000;
+    padding: 25px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px  rgb(240, 237, 237);
+    transition: .2s;
+    
+   }
+   .menu-item:hover{
+    box-shadow: inset 5px 0px 25px  rgba(141, 120, 196, 0.804); 
+    transition: .2s; 
+
+
    }
    
 
@@ -121,11 +144,9 @@ body {
     transition: 2s;
 }
 .about{
-    background-image: url(fts/must.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height:85vh;
+    
+    width: 100%;
+    height:100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -153,7 +174,7 @@ body {
     justify-content: space-around;
     text-align: center;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 15px;
 }
 .ti-about{
     background-color:var(--grey-bg);
@@ -214,11 +235,11 @@ body {
 
 
 @media screen and (max-width:375px) {
-    .rec-about{
-        width: 100vw;
-        font-size: 14px;
-           
+
+.p-rec-about{
+    font-size: 12px;
 }
+
 }
 
 
@@ -285,6 +306,9 @@ body {
         margin: auto;  }
         .hdr-list{
             display: none; }
+            .rec-about{
+            padding: 0;     
+        }
 
             .hdr-menu{
                 display: flex;
@@ -304,13 +328,11 @@ body {
             .bt-menu{
                 display: inline-block;
             }
+            .list-menu{
+                display: flex;
+            }
 
         
 
         }
             
-
-
-
-        
-    

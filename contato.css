@@ -1,119 +1,107 @@
 @font-face {
-    font-family: 'icones';
-    src: url(font/icones.ttf);
+  font-family: 'icones';
+  src: url(font/icones.ttf);
 }
 
 
 .body-ct{
-    background-color: rgba(0, 0, 0, 0.979);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-  
-
-    
-
-    
+  background-color: #cccccc;
 }
-.contato{
-  width: 85%;
-  margin-top: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-transform: uppercase;
-  color:#cccccc;
-  border-radius:20px;
 
-  
+.contato{
+width: 85%;
+margin-top: 60px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+text-transform: uppercase;
+color:#cccccc;
+border-radius:20px;
+
+
 }
 
 .foto-contato{
-  margin: auto;
-}
-.foto-desk{
-  border-radius: 20px;
-
+margin: auto;
+box-shadow:  10px 10px 10px #000000;
 }
 
 .info-ct{
-  margin: auto;
+margin: auto;
 }
 
 
 
 .name-ct{
-  width: fit-content;
-  margin-top: 35px;
-  font-size: 32px;
-  padding: 25px;
+width: fit-content;
+margin-top: 35px;
+font-size: 32px;
+padding: 25px;
 
 }
 
 .redes-ct{
-  width:80%;
-  height:fit-content ;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto auto auto;
-  row-gap: 3rem;
-  column-gap: 10px;
-  padding: 10px;
-  margin-top: 25px;
+width:80%;
+height:fit-content ;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: auto auto auto;
+row-gap: 3rem;
+padding: 10px;
+margin-top: 25px;
+}
 
-  
-  
+.li-rede{
+display: grid;
+grid-template-columns: 1fr 1fr;
 
 }
+
 .inf-ct{
-   background-color: #000000;
-  display: inline-block;
-  width: fit-content;
-  padding: 5px;
-  margin-left: 10px;
-  align-self: center;
-  border-radius: 5px;
-  
-  
-  
+margin: auto;
+}
+.link-ct{
+  margin: auto;
 }
 
 .link-ct:hover{
-  transform: scale(1.1);
-  transition: 1s;
-  cursor: default;
-  
+transform: scale(1.1);
+transition: 1s;
+cursor: default;
+
 }
 .mapa{
-  margin: 50px auto;
-  width: 70vw;
+margin: 50px auto;
+width: 95%;
+
 
 }
 
 
 .ti-map{
-  width: 100%;
-  display: block;
-  box-sizing: border-box;
-  padding: 25px;
-  text-align: center;
-  font-size: 26px;
-  background-color: #eee1e1c0;
-  border-radius: 20px 20px 0 0;
+width: 100%;
+display: flex;
+box-sizing: border-box;
+padding: 25px;
+align-items: center;
+justify-content: center;  
+font-size: 26px;
+background-color: #eee1e1c0;
+border-radius: 20px 20px 0 0;
 }
 
 
 
 .inf-map{
-  border-radius: 0 0 20px 20px;
-  font-size: 22px;
-  text-decoration: underline;
-  align-items: center;
-  color: #3a3af6;
+border-radius: 0 0 20px 20px;
+font-size: 22px;
+font-weight: 900;
+text-decoration: underline;
+align-items: center;
+color: #010109;
 
 }
 .img-map{
-  padding: 0 10px;
+padding: 20px;
 }
 
 
@@ -122,49 +110,93 @@
 
 
 @media screen and (max-width:850px) {
+
+.name-ct{
+font-size: 26px;
+}
+.inf-ct{
+  font-size: 12px;  
   
- .name-ct{
-  font-size: 22px;
- }
- .inf-ct{
-    font-size: 12px;  
-    
 }
 .ti-map{
-  font-size: 18px;
+font-size: 18px;
 }
 
 }
 
 
 @media screen and (max-width:670px) {
-   .contato{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
+ .contato{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 
-   }
-   .info-ct{
-    width: 100%;
-    display: flex;flex-direction: column;
-    align-items:center;
-    
-
-   }
-   .redes-ct{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-   }
-   .inf-ct{
-    display: none;
-   }
-
-  .name-ct{
-    font-size: 18px;
-
-  }
+ }
+ .info-ct{
+  margin-top: 2rem;
+  width: 95%;
+  display: flex;flex-direction: column;
+  align-items:center;
+  background-color: #000000;
+  border-radius: 15px;
+  box-shadow:  10px 10px 10px #000000;
   
   
+
+ }
+
+ .name-ct{
+  color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+ }
+ .redes-ct{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+ .li-rede{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+  justify-content: space-between;
+
+  
+ }
+ .inf-ct{
+  padding: 20px 0;
+
+ }
+ }
+
+
+
+
+
+
+
+@media screen and (max-width:370px) {
+  
+.ti-map{
+  
+width: 100%;
+
+
+padding: 25px 5px
+
+font-size: 18px;
+
+border-radius: 10px 10px 0 0;}
+
+
+
+
 }
