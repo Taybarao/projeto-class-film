@@ -5,8 +5,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    
+    align-items: center;  
 
 }
 
@@ -53,14 +52,15 @@
 
 
 .c1, .c2, .c3, .c4{
-    background-color:gray;
+    background-color:rgba(128, 128, 128, 0);
     width: 100%;
     height: 50vh;
-    border-radius: 15px;
     margin: auto;
     transition: 2s;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     opacity: 0%;
     
 
@@ -71,8 +71,6 @@
 .itens-curso{
     width: 100%;
     height: 50vh;
-    background-color:rgba(0, 0, 0, 0.533);
-    box-shadow: 8px 8px 12px black;
     overflow: hidden;
     margin: auto;
     
@@ -86,6 +84,7 @@
     background-color: #000000;
     color: aliceblue;
     padding: 25px 0;
+    font-size: 16px;
     width: 50%;
     text-align: center;
     border-radius: 5px;
@@ -93,6 +92,7 @@
     transition: .2s;
     text-shadow: 5px 5px 5px red;
     text-transform: uppercase;
+    
 }
 
 .label-item:hover{
@@ -145,7 +145,9 @@
     margin-top: -200vh;
 }
 #text-1:checked ~ .c1{
+
     opacity: 100%;
+    
 }
 
 #text-2:checked ~ .c2{
@@ -158,8 +160,43 @@
     opacity: 100%;
 }
 
+.foto-item{
+    width: 345px;
+    height: 193px;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 15px;
+}
+
+.descriçao-f{
+    width: 60%;
+    padding: 10px;
+    background-color: #000000d1;
+    color: white;
+    text-shadow: 5px 5px 5px red;
+    text-align: center;
+    font-size: 28px;
+    border-radius: 10px;
 
 
+}
+
+@media screen and (max-width:850px) {
+
+    .ti-curso, .descriçao-f{
+        font-size: 22px;
+    } 
+}
+
+@media screen and (max-width:670px) {
+
+    .ti-curso, .descriçao-f{
+        font-size: 18px;
+    }  
+
+    .label-item{
+        font-size: 14px;
+    }
+}
 
 
 
