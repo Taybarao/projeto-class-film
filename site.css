@@ -1,5 +1,7 @@
 @import url(contato.css);
 @import url(galeria.css);
+@import url(curso.css);
+
 
 
 @font-face {
@@ -97,7 +99,7 @@ body {
 
 
    .menu-item{
-    background-color: #000000;
+    background-color: #000000d5;
     padding: 25px 0;
     width: 100%;
     text-align: center;
@@ -110,8 +112,12 @@ body {
     box-shadow: inset 5px 0px 25px  rgba(141, 120, 196, 0.804); 
     transition: .2s; 
 
-
-   }
+  }
+  .menu-item:active{
+  box-shadow: inset 5px 0px 1px 25px transparent; 
+    transition: 1.2s;
+    color: transparent;
+  }
    
 
 

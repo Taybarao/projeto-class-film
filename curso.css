@@ -1,0 +1,175 @@
+
+
+.container-curso{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+
+}
+
+.ti-curso{
+    margin: auto;
+    text-align: center;
+    padding: 25px 0;
+    color: white;
+    text-shadow: 5px 5px 5px red;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;   
+   
+}
+
+.curso-slide{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+}
+
+.label-text{
+    background-color: rgba(0, 0, 0, 0.47);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 30px;
+}
+
+
+
+
+.c5{
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.c1, .c2, .c3, .c4{
+    background-color:gray;
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px;
+    margin: auto;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    opacity: 0%;
+    
+
+
+}
+
+
+.itens-curso{
+    width: 100%;
+    height: 50vh;
+    background-color:rgba(0, 0, 0, 0.533);
+    box-shadow: 8px 8px 12px black;
+    overflow: hidden;
+    margin: auto;
+    
+
+
+}
+
+
+
+.label-item{
+    background-color: #000000;
+    color: aliceblue;
+    padding: 25px 0;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px  rgb(240, 237, 237);
+    transition: .2s;
+    text-shadow: 5px 5px 5px red;
+    text-transform: uppercase;
+}
+
+.label-item:hover{
+    box-shadow: inset 5px 0px 25px  rgba(141, 120, 196, 0.804); 
+    transition: .2s; 
+    cursor: pointer;
+}
+
+.link-curso{
+    background-color: #fa0505;
+    color: aliceblue;
+    padding: 25px 0;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 10px  rgb(240, 237, 237);
+    transition: .2s;
+    text-shadow: 5px 5px 5px red;
+    text-transform: uppercase;
+
+}
+.link-curso:hover{
+    box-shadow: inset 5px 0px 25px  rgb(243, 247, 7); 
+    transition: .2s; 
+
+}
+
+
+
+#text-5:checked ~ .c5{
+    margin-top: 0;
+    opacity: 100%;
+}
+
+#text-1:checked ~ .c5{
+    margin-top: -50vh;
+    opacity: 0%;
+}
+
+#text-2:checked ~ .c5{
+    margin-top: -100vh;
+}
+
+#text-3:checked ~ .c5{
+    margin-top: -150vh;
+}
+
+#text-4:checked ~ .c5{
+    margin-top: -200vh;
+}
+#text-1:checked ~ .c1{
+    opacity: 100%;
+}
+
+#text-2:checked ~ .c2{
+    opacity: 100%;
+}
+#text-3:checked ~ .c3{
+    opacity: 100%;
+}
+#text-4:checked ~ .c4{
+    opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
