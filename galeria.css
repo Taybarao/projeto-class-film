@@ -1,10 +1,10 @@
-.rec-galeria{
+.rec-galeria {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
 }
 
-.ti-galeria{
+.ti-galeria {
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -14,15 +14,15 @@
     font-weight: bold;
     margin: 100px auto;
     text-transform: uppercase;
-   grid-column: span 2;
+    grid-column: span 2;
     grid-row: 1;
     box-sizing: border-box;
     padding: 25px 10px;
     box-shadow: 8px 8px 12px black;
-    
+
 }
 
-.video-galeria{
+.video-galeria {
     background-color: rgba(0, 0, 0, 0.45);
     width: 45vw;
     height: 80vh;
@@ -31,28 +31,30 @@
     box-shadow: 8px 8px 12px black;
 
 }
-.container-slide{
+
+.container-slide {
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.45);
     margin: auto;
     overflow: hidden;
-    
+
 
 }
 
-.slider{
+.slider {
     margin: 50px auto;
     max-width: 340px;
     width: 100%;
     height: 450px;
     display: flex;
     align-items: center;
-    
-    
+
+
 
 }
-.ti-slider{
+
+.ti-slider {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,27 +66,29 @@
     font-size: 32px;
     font-weight: bold;
     border-radius: 100% 0 100% 0;
-    box-shadow: 1px 2px 5px black,1px 2px 5px rgba(0, 0, 255, 0.674);
-    
+    box-shadow: 1px 2px 5px black, 1px 2px 5px rgba(0, 0, 255, 0.674);
+
 }
 
 
-.efeito{
+.efeito {
     width: 100%;
     height: 60px;
     background-color: rgba(0, 0, 0, 0.356);
     margin-top: 50px;
     border-radius: 0% 100% 0 100%;
     box-shadow: 1px 2px 5px rgb(239, 4, 4);
-        box-shadow: 1px 2px 5px black,1px 2px 5px rgba(0, 0, 255, 0.674);
-    
+    box-shadow: 1px 2px 5px black, 1px 2px 5px rgba(0, 0, 255, 0.674);
 
-    
+
+
 }
-input[type=radio]{
-    display:none;
+
+input[type=radio] {
+    display: none;
 }
-.container-label{
+
+.container-label {
     position: relative;
     width: 40%;
     height: 30px;
@@ -94,84 +98,174 @@ input[type=radio]{
     align-items: center;
 }
 
-.img-prev{
+.img-prev {
     transform: scale(0.7);
-    padding:0 5px;
+    padding: 0 5px;
 }
 
-.img-prev:hover{
+.img-prev:hover {
     transform: scale(1.1);
 }
 
 
 
-.s1, .s2, .s3, .s4, .s5{
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.t1,
+.t2,
+.t3,
+.t4,
+.t5 {
     transform: scale(0.6);
     box-shadow: 10px 10px 10px rgb(255, 255, 255);
     opacity: 25%;
     transition: 1s;
-    
+
 
 
 }
 
+.t2 {
+    width: 340px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
 
-#item-1:checked ~ .s1{
+
+}
+
+.video-envelope {
+    width: 340px;
+    height: 425px;
+}
+
+
+#item-1:checked~.s1 {
     margin-left: 0;
 }
-#item-2:checked ~ .s1{
+
+#item-2:checked~.s1 {
     margin-left: -340px;
     transition: 1s;
 }
-#item-3:checked ~ .s1{
+
+#item-3:checked~.s1 {
     margin-left: -680px;
 }
-#item-4:checked ~ .s1{
+
+#item-4:checked~.s1 {
     margin-left: -1020px;
 }
 
-#item-5:checked ~ .s1{
+#item-5:checked~.s1 {
     margin-left: -1360px;
 }
 
-#item-1:checked ~ .s1{
-    transform: scale(1);
-    opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
-}
-#item-2:checked ~ .s2{
-    transform: scale(1);
-    opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
-}
-#item-3:checked ~ .s3{
-    transform: scale(1);
-    opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
-}
-#item-4:checked ~ .s4{
-    transform: scale(1);
-    opacity: 100%; box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
-}
-#item-5:checked ~ .s5{
+#item-1:checked~.s1 {
     transform: scale(1);
     opacity: 100%;
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
+#item-2:checked~.s2 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
 
- 
-  
-  
+#item-3:checked~.s3 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#item-4:checked~.s4 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#item-5:checked~.s5 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
 
 
 
-    
+#item_1:checked~.t1 {
+    margin-left: 0;
+}
+
+#item_2:checked~.t1 {
+    margin-left: -340px;
+    transition: 1s;
+}
+
+#item_3:checked~.t1 {
+    margin-left: -680px;
+}
+
+#item_4:checked~.t1 {
+    margin-left: -1020px;
+}
+
+#item_5:checked~.t1 {
+    margin-left: -1360px;
+}
+
+#item_1:checked~.t1 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#item_2:checked~.t2 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#item_3:checked~.t3 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#item_4:checked~.t4 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#item_5:checked~.t5 {
+    transform: scale(1);
+    opacity: 100%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -188,47 +282,48 @@ input[type=radio]{
 
 
 @media screen and (max-width:850px) {
-    .rec-galeria{
+    .rec-galeria {
         display: flex;
         flex-direction: column;
-      
-    }
-    .ti-galeria{
-        font-size: 18px;
-        font-weight: bold;
-        
-        
+
     }
 
-    .video-galeria{
+    .ti-galeria {
+        font-size: 18px;
+        font-weight: bold;
+
+
+    }
+
+    .video-galeria {
         background-color: rgba(0, 0, 0, 0.571);
         width: 95vw;
         height: 80vh;
         padding: 20px 0;
 
-        
-        
+
+
     }
 
-    .ti-slider{
+    .ti-slider {
         font-size: 24px;
     }
 }
 
 @media screen and (max-width:670px) {
 
-    .video-galeria{
+    .video-galeria {
         background-color: rgba(0, 0, 0, 0.571);
         width: 65vw;
         height: 45vh;
         padding: 30px;
-    
 
-        
-        
+
+
+
     }
 
-    .ti-slider{
+    .ti-slider {
         font-size: 18px;
     }
 

@@ -2,53 +2,59 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Film</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="site.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Film</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="site.css">
 
 </head>
 
 <body>
-    <header class="header">
-      
-        <a href="index.html"><img src="fts/Logo_ClassFilm.png" alt="" class="logoft"></a>
-        <input type="checkbox" id="menu" class="check-bt">
-        <label for="menu" class="menu-ativo">
-        <span class="bt-menu"></span>
-        </label>
-        <ul class="list-menu">
-            <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
-            <li class="menu-item"><a href="contato.html" class="menu-link">Contato</a></li>
-            <li class="menu-item"><a href="galeria.html" class="menu-link">Galeria</a></li>
-            <li class="menu-item"><a href="curso.html" class="menu-link">Nosso curso</a></li>    
-                
-        </ul>
-        <ul class="hdr-list">
-            <li class="hdr-li"><a href="index.html">Home</a></li>
-            <li class="hdr-li"><a href="contato.html">Contato</a></li> 
-            <li class="hdr-li"><a href="curso.html">Nosso Curso</a></li>
-        </ul>
-      </header>
 
-    <main class="galeria">
-   <section class="rec-galeria">
-    <h1 class="ti-galeria">trabalho realizado com profissionalismo e excelência</h1>
-    <video src="fts/WhatsApp Video 2023-04-17 at 14.51.58.mp4"  loop autoplay    controls class="video-galeria" ></video>
-    <video src="fts/WhatsApp Video 2023-04-17 at 14.53.42.mp4"  loop autoplay   controls class="video-galeria" ></video>
-   </section>
- 
-   <div class="efeito">
-       <h2 class="ti-slider">aplicaçao de insulfilm</h2>
-   </div>
+  <header class="header">
 
-   <div class="container-slide">
-       <section class="slider">
+    <a href="galeria.html"> <img src="fts/Logo_ClassFilm.png" alt="" class="logo-oficina"></a>
+
+    <input type="checkbox" id="menu" class="check-bt">
+    <label for="menu" class="menu-ativo">
+      <span class="bt-menu"></span>
+    </label>
+
+    <ul class="lista-menu">
+      <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+      <li class="menu-item"><a href="contato.html" class="menu-link">Contato</a></li>
+      <li class="menu-item"><a href="galeria.html" class="menu-link">Galeria</a></li>
+      <li class="menu-item"><a href="curso.html" class="menu-link">Nosso curso</a></li>
+    </ul>
+
+    <ul class="header-lista">
+      <li class="hdr-li"><a href="index.html">Home</a></li>
+      <li class="hdr-li"><a href="contato.html">Contato</a></li>
+      <li class="hdr-li"><a href="curso.html">Nosso Curso</a></li>
+    </ul>
+
+  </header>
+
+  <main class="galeria">
+    <section class="rec-galeria">
+      <h1 class="ti-galeria">trabalho realizado com profissionalismo e excelência</h1>
+      <video src="fts/WhatsApp Video 2023-04-17 at 14.51.58.mp4" loop autoplay muted controls class="video-galeria">
+      </video>
+      <video src="fts/WhatsApp Video 2023-04-17 at 14.53.42.mp4" loop autoplay muted controls class="video-galeria">
+      </video>
+    </section>
+
+
+    <h2 class="ti-galeria">aplicaçao de insulfilm</h2>
+
+
+    <section class="container-slide">
+      <div class="slider">
 
         <input type="radio" name="bt-slide" id="item-1">
         <input type="radio" name="bt-slide" id="item-2">
@@ -56,32 +62,65 @@
         <input type="radio" name="bt-slide" id="item-4">
         <input type="radio" name="bt-slide" id="item-5">
 
-       <img src="fts/slide1.jpeg" alt="" class=" s1">
+        <img src="fts/slide1.jpeg" alt="" class=" s1">
 
         <img src="fts/slide2.jpeg" alt="" class=" s2">
 
-        <img src="fts/slide3.jpeg" alt="" class=" s3"> 
+        <img src="fts/slide3.jpeg" alt="" class=" s3">
 
-         <img src="fts/slide4.jpeg" alt="" class=" s4">
+        <img src="fts/slide4.jpeg" alt="" class=" s4">
 
-         <img src="fts/slide5.jpeg" alt="" class=" s5">
-
-        
-     </section>
-     
-     <div class="container-label" >
-        <label  for="item-1"><img src="fts/label1.jpeg" alt="" class="img-prev"></label>
-        <label  for="item-2"><img src="fts/label2.jpeg" alt="" class="img-prev"></label>
-        <label  for="item-3"><img src="fts/label3.jpeg" alt="" class="img-prev"></label>
-        <label  for="item-4"><img src="fts/label4.jpeg" alt="" class="img-prev"></label>
-        <label  for="item-5"><img src="fts/label5.jpeg" alt="" class="img-prev"></label>
-    </div>
-       
-       
-   </div>
+        <img src="fts/slide5.jpeg" alt="" class=" s5">
 
 
-    
+      </div>
+
+      <div class="container-label">
+        <label for="item-1"><img src="fts/label1.jpeg" alt="" class="img-prev"></label>
+        <label for="item-2"><img src="fts/label2.jpeg" alt="" class="img-prev"></label>
+        <label for="item-3"><img src="fts/label3.jpeg" alt="" class="img-prev"></label>
+        <label for="item-4"><img src="fts/label4.jpeg" alt="" class="img-prev"></label>
+        <label for="item-5"><img src="fts/label5.jpeg" alt="" class="img-prev"></label>
+      </div>
+
+
+    </section>
+
+    <h2 class="ti-galeria">envelopamento</h2>
+
+    <section class="container-slide">
+      <div class="slider">
+
+        <input type="radio" name="bt-slid" id="item_1">
+        <input type="radio" name="bt-slid" id="item_2" checked>
+        <input type="radio" name="bt-slid" id="item_3">
+
+
+
+
+        <img src="fts/envelope2.jpg" alt="" class="t1">
+
+        <div class="t2">
+          <video src="fts/video1.mp4" loop autoplay muted class="video-envelope"></video>
+        </div>
+
+        <img src="fts/envelope4.jpg" alt="" class="t3">
+
+
+
+
+      </div>
+
+      <div class="container-label">
+
+        <label for="item_1"><img src="fts/labelenvelope2.jpg" alt="" class="img-prev"></label>
+        <label for="item_2"><img src="fts/labelenvelope3.png" alt="" class="img-prev"></label>
+        <label for="item_3"><img src="fts/labelenvelope4.jpg" alt="" class="img-prev"></label>
+
+      </div>
+
+
+    </section>
 
 
 
@@ -90,8 +129,14 @@
 
 
 
-    </main>
 
-    
+
+
+  </main>
+ 
+ 
+
+
 </body>
+
 </html>

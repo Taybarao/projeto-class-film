@@ -2,32 +2,25 @@
 @import url(galeria.css);
 @import url(curso.css);
 
-
-
 @font-face {
     font-family: 'icones';
     src: url(font/icones.ttf);
 }
 
-:root{
-  --grey:#c0c0c0;
-  --red:rgb(255, 129, 129);
-  --wihte:rgb(255, 255, 255);
-  --bck:#000000;
-  --grey-bg:#cccccc92;
-
-
-
+:root {
+    --grey: #c0c0c0;
+    --red: rgb(255, 129, 129);
+    --wihte: rgb(255, 255, 255);
+    --bck: #000000;
+    --grey-bg: #9e9e9e;
 }
 
 body {
-
     background-image: url(fts/must.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: 'Open Sans', 'icones', sans-serif;
-
 }
 
 .header {
@@ -41,129 +34,111 @@ body {
     position: relative;
 }
 
+.logo-oficina {
+    max-width: 300px
+}
 
 
 
-
-.check-bt:checked ~ .list-menu{
-    margin-left: 55%; 
-    transition: 1.5s;
+.check-bt:checked~.lista-menu {
+    margin-left: 55%;
+    transition: 1s;
     opacity: 100%;
 }
 
-.check-bt:checked ~ .menu-ativo > .bt-menu{
-    background-image:url(fts/Menu\ Aberto.svg);
-    border:2px solid red;
-    box-sizing: border-box;
-    
-    
+.check-bt:checked~.menu-ativo>.bt-menu {
+    background-image: url(fts/Menu\ Aberto.svg);
 }
 
-
-
-
-
-.bt-menu{
+.bt-menu {
     background-image: url(.//fts/Menu.svg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     display: none;
     width: 30px;
     height: 30px;
-    margin-right: 30px;
-
-}
-.check-bt{
-    display: none;  
+    padding: 10px;
 }
 
-
-
-.list-menu{
+.check-bt,
+.lista-menu {
     display: none;
+}
+
+
+
+.lista-menu {
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
     font-size: 16px;
     width: 45%;
     height: fit-content;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 100%;
     margin-left: 30%;
     opacity: 0%;
-    
-    
-    
-   }
+}
 
-
-   .menu-item{
-    background-color: #000000d5;
+.menu-item {
+    background-color: #000000;
     padding: 25px 0;
     width: 100%;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: inset 0px 0px 10px  rgb(240, 237, 237);
+    box-shadow: inset 0px 0px 10px rgb(240, 237, 237);
     transition: .2s;
-    
-   }
-   .menu-item:hover{
-    box-shadow: inset 5px 0px 25px  rgba(141, 120, 196, 0.804); 
-    transition: .2s; 
 
-  }
-  .menu-item:active{
-  box-shadow: inset 5px 0px 1px 25px transparent; 
-    transition: 1.2s;
-    color: transparent;
-  }
-   
+}
 
+.menu-item:hover {
+    box-shadow: inset 5px 0px 25px rgba(141, 120, 196, 0.804);
+    transition: .2s;
 
+}
 
-.logoft{
-    max-width:400px;
-    width: 100%;
-  }
-
-.hdr-list{
+.header-lista {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 1.2rem;
     color: #cccccc;
 }
-.hdr-li{
+
+.hdr-li {
     padding: 5px;
     margin: 5px 20px 5px 20px;
     box-sizing: border-box;
 }
-.hdr-li:hover{
+
+.hdr-li:hover {
     color: red;
-     transition: 1s; 
-     text-decoration: underline 1px;
-     border-radius: 5px;       
+    transition: 1s;
+    text-decoration: underline 1px;
+    border-radius: 5px;
 }
-.logoft:hover{
-    opacity: 70%;
-    transition: 2s;
+
+.logo-oficina:hover {
+    transition: 1s;
+    opacity: 50%;
+
 }
-.about{
-    
+
+.sobre {
+
     width: 100%;
-    height:100vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
 }
 
 
-.cont-img{
-    margin: auto;    
+.box-img {
+    margin: auto;
 }
 
-.ofi-img{
+.oficina-imagem {
     border-radius: 10px 50px;
     box-shadow: 3px 3px 6px black;
 
@@ -171,174 +146,194 @@ body {
 
 
 
-.rec-about{
+.descriçao-container {
     color: var(--bck);
     width: 100%;
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     box-sizing: border-box;
     padding: 0 15px;
 }
-.ti-about{
-    background-color:var(--grey-bg);
+
+.titulo-home {
+    background-color: var(--grey-bg);
     padding: 10px 20px;
     font-size: 32px;
     font-weight: bold;
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px black,inset 3px 2px 5px wheat;
-    
+    border-radius: ;
+    box-shadow: 3px 3px 5px black;
+
 }
 
 
-.p-rec-about{
-    background-color:var(--grey-bg);
+.descriçao-home {
+    background-color: var(--grey-bg);
     padding: 10px 20px;
     font-weight: bold;
-    border-radius: 15px;
-    box-shadow: 3px 3px 5px black,inset 3px 2px 5px wheat;
-    
-   
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+
+
 }
-.bt-format{
-    background-color:rgba(255, 0, 0, 0.726);
+
+.bt-formato {
+    background-color: rgb(200, 4, 4);
     color: var(--bck);
-    display:flex;
+    display: flex;
     width: max-content;
     height: max-content;
     padding: 5px 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 3px black,inset 3px 2px 2px wheat;
-    
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px black, inset 3px 2px 2px wheat;
 
-    
-    
+
+
+
 }
 
-.bt-format:hover{
-    transform: scale(1.1);
-    box-shadow: 3px 3px 3px black,inset 3px 2px 2px rgb(0, 0, 0);
+.bt-formato:hover {
+    transform: scale(1.2);
     transition: 1s;
 }
-.bt-link{
+
+.bt-link {
     align-self: center;
-    
+
 }
 
-.ti-bt{
+.titulo-bt {
     font-weight: bold;
-    font-size: 30px;
-    grid-column: 1 /span2 ;
-    
+    font-size: 20px;
+    grid-column: 1 /span2;
+    align-self: center;
+
 }
-.img-bt1{
+
+.img-bt1 {
     background-color: #000000;
     grid-column: 2;
-    padding: 5px ;
+    padding: 5px;
 }
 
 
 @media screen and (max-width:375px) {
 
-.p-rec-about{
-    font-size: 12px;
-}
+    .descriçao-home {
+        font-size: 12px;
+    }
 
 }
 
 
- 
 
-@media screen and (max-width:1000px){
-    .about{
+
+@media screen and (max-width:1000px) {
+    .sobre {
         display: flex;
         justify-content: center;
     }
-    .hdr-li{
+
+    .hdr-li {
         margin: 5px 15px 5px 15px;
     }
- 
 
-     
-    
+
+
+
 }
 
 
 @media screen and (max-width:850px) {
-    .logoft{
-        max-width:300px;
+    .logo-oficina {
+        max-width: 300px;
         width: 100%;
-        margin: auto;   
-}
-     .hdr-list{
-    justify-content: space-evenly;
-    font-size: 1rem;
-}
-.header{
-    height: 15vh;
-}
-.about{
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    
+        margin: auto;
+    }
 
-}
+    .header-lista {
+        justify-content: space-evenly;
+        font-size: 1rem;
+    }
 
-.cont-img{
-    margin-top: 20px;
-}
-.ti-about{
-    font-size: 26px;
-}
-.rec-about{
-    width: 100vw;
-    height: 75vh;
-    display: flex;
-    font-size: 18px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
+    .sobre {
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .box-img {
+        margin-top: 20px;
+    }
+
+    .titulo-home {
+        font-size: 26px;
+    }
+
+    .descriçao-container {
+        width: 100vw;
+        height: 75vh;
+        display: flex;
+        font-size: 18px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
 }
 
 @media screen and (max-width:670px) {
-    .logoft{
-        max-width:250px;
+    .logo-oficina {
+        max-width: 220px;
         width: 100%;
-        margin: auto;  }
-        .hdr-list{
-            display: none; }
-            .rec-about{
-            padding: 0;     
-        }
+        margin: auto;
+    }
 
-            .hdr-menu{
-                display: flex;
-                margin: auto;
-                padding: 10px;
-            }
-            .header{
-                height: 10vh;
-            }
-            .about{
-                height: 90vh;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-            
-            }
-            .bt-menu{
-                display: inline-block;
-            }
-            .list-menu{
-                display: flex;
-            }
+    .header-lista {
+        display: none;
+    }
 
-        
+    .descriçao-container {
+        padding: 0;
+    }
 
-        }
-            
+    .hdr-menu {
+        display: flex;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .header {
+        height: 10vh;
+    }
+
+    .sobre {
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .bt-menu {
+        display: inline-block;
+    }
+
+    .lista-menu {
+        display: flex;
+    }
+
+    .menu-ativo {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+
+
+}
