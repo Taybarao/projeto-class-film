@@ -12,7 +12,7 @@
     text-shadow: 5px 5px 5px red;
     font-size: 28px;
     font-weight: bold;
-    margin: 70px auto;
+    margin: 60px 0 30px 0;
     text-transform: uppercase;
     grid-column: span 2;
     grid-row: 1;
@@ -23,7 +23,7 @@
 }
 
 .video-galeria {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.303);
     width: 45vw;
     height: 80vh;
     justify-self: center;
@@ -34,8 +34,7 @@
 
 .container-slide {
     width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0);
+    height: 90vh;
     margin: auto;
     overflow: hidden;
 
@@ -46,7 +45,7 @@
     margin: 50px auto;
     max-width: 340px;
     width: 100%;
-    height: 450px;
+    height: 400px;
     display: flex;
     align-items: center;
 
@@ -54,21 +53,7 @@
 
 }
 
-.ti-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(255, 0, 0, 0.452);
-    color: black;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: bold;
-    border-radius: 100% 0 100% 0;
-    box-shadow: 1px 2px 5px black, 1px 2px 5px rgba(0, 0, 255, 0.674);
 
-}
 
 
 .efeito {
