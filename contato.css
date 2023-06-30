@@ -1,12 +1,7 @@
-@font-face {
-  font-family: 'icones';
-  src: url(font/icones.ttf);
-}
 
 
-.body-contato {
-  background-color: #cccccc;
-}
+
+
 
 .contato {
   width: 85%;
@@ -75,6 +70,7 @@
   color: wheat;
   background-color: #000000c5;
   margin: 20px auto;
+  font-size: 22px;
 }
 
 tr,

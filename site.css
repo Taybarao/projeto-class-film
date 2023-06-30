@@ -2,10 +2,9 @@
 @import url(galeria.css);
 @import url(curso.css);
 
-@font-face {
-    font-family: 'icones';
-    src: url(font/icones.ttf);
-}
+
+
+
 
 :root {
     --grey: #c0c0c0;
@@ -20,7 +19,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    font-family: 'Open Sans', 'icones', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+    
 }
 
 .header {
@@ -32,9 +33,11 @@ body {
     align-items: center;
     color: white;
     position: relative;
+    opacity: 75%;
 }
 
 .logo-oficina {
+    margin: auto;
     max-width: 300px
 }
 
@@ -134,7 +137,7 @@ body {
 
 
 .box-img {
-    margin: auto;
+    margin: 20px auto ;
 }
 
 .oficina-imagem {
@@ -146,6 +149,7 @@ body {
 
 
 .descriçao-container {
+    margin-top: 35px;
     color: var(--bck);
     width: 100%;
     font-size: 22px;
@@ -169,6 +173,7 @@ body {
 
 
 .descriçao-home {
+    margin: 20px auto;
     background-color: var(--grey-bg);
     padding: 10px 20px;
     font-weight: bold;
@@ -271,7 +276,6 @@ body {
     }
 
     .sobre {
-        height: 85vh;
         display: flex;
         flex-direction: column;
 
@@ -324,7 +328,6 @@ body {
     }
 
     .sobre {
-        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
