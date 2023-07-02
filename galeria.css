@@ -4,6 +4,46 @@
     grid-template-rows: auto 1fr;
 }
 
+
+
+.efeito-titulo{
+    margin: 265px auto 100px auto;
+    position: relative;
+    width: 100%;
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   overflow: hidden;
+    
+
+
+}
+
+.efeito-titulo::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2200%;
+    background: linear-gradient(red,blue,grey,white,green);
+    animation: animate 2.6s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+
+    }
+
+    100%{
+        transform: rotate(360deg);
+        
+
+    }
+}
+
+
+
 .ti-galeria {
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -12,18 +52,19 @@
     text-shadow: 5px 5px 5px red;
     font-size: 28px;
     font-weight: bold;
-    margin: 60px 0 30px 0;
+    
     text-transform: uppercase;
     grid-column: span 2;
     grid-row: 1;
     box-sizing: border-box;
     padding: 25px 10px;
-    box-shadow: 8px 8px 12px black;
+ 
+    z-index: 10;
 
 }
 
 .video-galeria {
-    background-color: rgba(0, 0, 0, 0.303);
+ 
     width: 45vw;
     height: 80vh;
     justify-self: center;
@@ -77,7 +118,7 @@ input[type=radio] {
     position: relative;
     width: 100%;
     height: 30px;
-    margin: auto;
+    margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -350,6 +391,17 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
 
 
 
+@media screen and (max-width:966px) {
+    .ti-galeria {
+        font-size: 18px;
+        font-weight: bold;
+
+
+    }
+    .efeito-titulo{
+        height: 72px;
+    }
+}
 
 
 
@@ -368,7 +420,6 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
     }
 
     .video-galeria {
-        background-color: rgba(0, 0, 0, 0.571);
         width: 95vw;
         height: 80vh;
         padding: 20px 0;
@@ -385,7 +436,7 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
 @media screen and (max-width:670px) {
 
     .video-galeria {
-        background-color: rgba(0, 0, 0, 0.571);
+        
         width: 65vw;
         height: 45vh;
         padding: 30px;

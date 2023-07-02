@@ -4,7 +4,7 @@
 
 
 .contato {
-  width: 85%;
+  width:100%;
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -88,17 +88,7 @@ td {
 }
 
 
-.ti-map {
-  margin: auto;
-  text-align: center;
-  padding: 25px 0;
-  color: white;
-  text-shadow: 5px 5px 5px red;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: #000000c4;
-}
+
 
 
 
