@@ -1,20 +1,24 @@
+
 .rec-galeria {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 75vh;
+    
 }
 
 
 
 .efeito-titulo{
-    margin: 265px auto 100px auto;
+    margin: 100px auto 30px auto;
     position: relative;
     width: 100%;
-    height: 81px;
+    height:80px;
     display: flex;
     justify-content: center;
     align-items: center;
-   overflow: hidden;
+    overflow: hidden;
     
 
 
@@ -23,8 +27,8 @@
 .efeito-titulo::before{
     content: '';
     position: absolute;
-    width:100%;
-    height: 2200%;
+    width:1000%;
+    height: 2400%;
     background: linear-gradient(red,blue,grey,white,green);
     animation: animate 2.6s linear infinite;
 }
@@ -32,6 +36,7 @@
 @keyframes animate{
     0%{
         transform: rotate(0deg);
+        
 
     }
 
@@ -42,34 +47,69 @@
     }
 }
 
+  
+.logo-mapa{
+    padding: 10px;
+}
 
 
 .ti-galeria {
+    height: 95%;
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: white;
-    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
     text-shadow: 5px 5px 5px red;
-    font-size: 28px;
-    font-weight: bold;
-    
+    font-size: 26px;   
     text-transform: uppercase;
-    grid-column: span 2;
-    grid-row: 1;
     box-sizing: border-box;
-    padding: 25px 10px;
  
     z-index: 10;
 
 }
 
-.video-galeria {
- 
-    width: 45vw;
-    height: 80vh;
-    justify-self: center;
-    align-self: center;
-    box-shadow: 8px 8px 12px black;
+.efeito-video{
+
+     
+    height: 98%;
+    width:30% ;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    
+}
+
+
+.efeito-video::before{
+    content: '';
+    position: absolute;
+    width:2200%;
+    height: 50%;
+    background: linear-gradient(red,blue,grey,white,yellow);
+    animation: animate 10s linear infinite;
+    z-index: 8;
+    opacity: 50%;
+}
+
+
+
+
+
+
+
+
+.video-galeria {  
+       
+    width: 98%;
+    z-index: 9;
+
 
 }
 
@@ -117,7 +157,7 @@ input[type=radio] {
 .container-label {
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 60px;
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
@@ -374,83 +414,53 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:966px) {
-    .ti-galeria {
-        font-size: 18px;
-        font-weight: bold;
-
-
-    }
-    .efeito-titulo{
-        height: 72px;
-    }
-}
-
-
-
-@media screen and (max-width:850px) {
-    .rec-galeria {
-        display: flex;
+@media screen and (max-width:1000px) {
+    .rec-galeria{
         flex-direction: column;
-
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
     }
 
-    .ti-galeria {
-        font-size: 18px;
-        font-weight: bold;
-
-
+    .efeito-video{
+        width: 50%;
     }
-
-    .video-galeria {
-        width: 95vw;
-        height: 80vh;
-        padding: 20px 0;
-
+    .ti-galeria{
+        font-size: 22px;
+    }
 
 
     }
 
-    .ti-slider {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width:670px) {
-
-    .video-galeria {
         
-        width: 65vw;
-        height: 45vh;
-        padding: 30px;
+   
+
+    @media screen and (max-width:670px) {
+       .efeito-titulo{
+        margin-top: 50px;
+       }
 
 
+        .ti-galeria{
+            font-size: 18px;
+        }
 
 
-    }
+        
+       
+        .rec-galeria{
+           
+            height: 120vh;
+        }
 
-    .ti-slider {
-        font-size: 18px;
-    }
+    
     .container-label{
         display: flex;
     }
 
+
+    .rec-galeria{
+           
+        height: 80vh;
+    }
 }
