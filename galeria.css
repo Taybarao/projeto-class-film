@@ -94,7 +94,7 @@
     height: 50%;
     background: linear-gradient(red,blue,grey,white,yellow);
     animation: animate 10s linear infinite;
-    z-index: 8;
+    z-index: 4;
     opacity: 50%;
 }
 
@@ -108,7 +108,7 @@
 .video-galeria {  
        
     width: 98%;
-    z-index: 9;
+    z-index: 5;
 
 
 }
