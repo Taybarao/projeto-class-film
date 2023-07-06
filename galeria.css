@@ -1,17 +1,27 @@
 
-.rec-galeria {
 
+
+.topico {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-    height: 75vh;
+    margin-top: 100px;
     
+    
+    
+}
+
+.videos{
+     margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
 
 .efeito-titulo{
-    margin: 100px auto 30px auto;
     position: relative;
     width: 100%;
     height:80px;
@@ -71,32 +81,6 @@
 
 }
 
-.efeito-video{
-
-     
-    height: 98%;
-    width:30% ;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-
-    
-}
-
-
-.efeito-video::before{
-    content: '';
-    position: absolute;
-    width:2200%;
-    height: 50%;
-    background: linear-gradient(red,blue,grey,white,yellow);
-    animation: animate 10s linear infinite;
-    z-index: 4;
-    opacity: 50%;
-}
 
 
 
@@ -107,15 +91,18 @@
 
 .video-galeria {  
        
-    width: 98%;
+    width: 45%;
     z-index: 5;
+    height: 600px;
 
 
 }
 
+
 .container-slide {
+  
+    margin-top: 100px;
     width: 100%;
-    margin: auto;
     overflow: hidden;
 
 
@@ -395,9 +382,9 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
     display: none;
 }
 
-.lanterna{
+.lanternas{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     
 
@@ -415,16 +402,9 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
 
 
 @media screen and (max-width:1000px) {
-    .rec-galeria{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 150vh;
-    }
 
-    .efeito-video{
-        width: 50%;
-    }
+
+   
     .ti-galeria{
         font-size: 22px;
     }
@@ -436,22 +416,17 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
    
 
     @media screen and (max-width:670px) {
-       .efeito-titulo{
-        margin-top: 50px;
-       }
+      
 
 
         .ti-galeria{
             font-size: 18px;
         }
-
-
-        
-       
-        .rec-galeria{
-           
-            height: 120vh;
+        .video-galeria{
+            height: 350px;
         }
+
+
 
     
     .container-label{
@@ -459,8 +434,16 @@ box-shadow: 10px 10px 10px rgb(0, 0, 0);
     }
 
 
-    .rec-galeria{
-           
-        height: 80vh;
-    }
 }
+
+  @media screen and (max-width:410px) {
+   
+    .topico, .container-slide, .videos{
+        margin-top: 50px;
+    }
+   
+   
+    .video-galeria{
+        height: 280px;
+    }
+  }
