@@ -3,33 +3,57 @@
 
 
 
-.contato {
+.contatos {
   width:100%;
-  margin-top: 60px;
+  margin: 60px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto ;
+  grid-template-areas: 
+  " video redes "
+  " sobre sobre "
+  ;
+  row-gap: 5rem;
   text-transform: uppercase;
   color: #cccccc;
-  border-radius: 20px;
+ 
 
 
 }
 
-.foto-contato {
+.video-contato{
+  height: 500px;
   margin: auto;
   box-shadow: 10px 10px 10px #000000;
+ grid-area: video;
+ border-radius: 30px;
+
 }
 
 .info-ct {
   margin: auto;
+  grid-area: redes;
+}
+
+.descriçao-contato{
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: black;
+  text-transform: none;
+  margin:auto;
+  grid-area: sobre;
+   width: 90%;
 }
 
 
 
 .name-ct {
+  text-align: center;
   width: fit-content;
-  margin-top: 35px;
-  font-size: 32px;
+  font-size: 28px;
   padding: 25px;
 
 }
@@ -60,17 +84,16 @@
 }
 
 .link-ct:hover {
-  transform: scale(1.1);
-  transition: 1s;
-  cursor: default;
+  transform: scale(1.2);
+  transition: .5s;
 
 }
 
 .tabela-hr {
   color: wheat;
   background-color: #000000c5;
-  margin: 20px auto;
   font-size: 22px;
+  margin: 50px;
 }
 
 tr,
@@ -81,33 +104,34 @@ td {
 }
 
 .mapa {
-  margin: 50px auto;
-  width: 95%;
-
-
-}
-
-
-
-
-
-
-.inf-map {
-  border-radius: 0 0 20px 20px;
-  font-size: 22px;
-  font-weight: 900;
+  margin: 100px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  color: #010109;
+
+
 
 }
 
-.img-map {
-  padding: 20px;
+
+
+
+
+
+
+
+
+
+
+
+.mapa-contato {
+  border-radius: 30px;
 }
 
-.mapa-ct {
-  border-radius: 10px;
-}
+  
+
 
 
 
@@ -125,24 +149,35 @@ td {
 
   }
 
-  .ti-map {
-    font-size: 18px;
-  }
+ 
 
 }
 
 
 @media screen and (max-width:670px) {
-  .contato {
+
+  .tabela-hr{
+    font-size: 14px;
+  }
+
+
+
+  .contatos {
     display: flex;
-    flex-direction: column;
+   flex-direction: column;
     align-items: center;
     width: 100%;
+    row-gap: 2rem;
 
   }
 
+  .video-contato{
+    height: 350px;
+
+  
+  }
+
   .info-ct {
-    margin-top: 2rem;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -157,7 +192,6 @@ td {
 
   .name-ct {
     color: white;
-    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +217,7 @@ td {
   }
 
   .inf-ct {
-    padding: 20px 0;
+    padding: 10px 0;
 
   }
 }
@@ -194,19 +228,3 @@ td {
 
 
 
-@media screen and (max-width:370px) {
-
-  .ti-map {
-
-    width: 100%;
-
-
-    padding: 25px 5px font-size: 18px;
-
-    border-radius: 10px 10px 0 0;
-  }
-
-
-
-
-}
