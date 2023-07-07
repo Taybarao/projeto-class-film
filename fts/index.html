@@ -2,58 +2,77 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Film</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
-    <link rel="stylesheet" href="site.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Class Film</title>
+     <link rel="stylesheet" href="reset.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="site.css">
+</head> 
+ <header class="header">
 
-</head>
-<body> 
-<header class="header">
-      
-    <img src="fts/Logo_ClassFilm.png" alt="" class="logoft">
-    <input type="checkbox" id="menu" class="check-bt">
-    <label for="menu" class="menu-ativo">
-    <span class="bt-menu"></span>
-    </label>
-    <ul class="list-menu">
-        <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
-        <hr>
-        <li class="menu-item"><a href="contato.html" class="menu-link">contato</a></li>
-        <hr>
-        <li class="menu-item"><a href="#" class="menu-link">nosso curso</a></li>        
-    </ul>
-    <ul class="hdr-list">
-        <li class="hdr-li"><a href="index.html">Home</a></li>
-        <li class="hdr-li"><a href="contato.html">Contato</a></li> 
-        <li class="hdr-li"><a href="curso.html">Nosso Curso</a></li>
-    </ul>
-  </header>    
-  <main class="about">
-      <picture class="cont-img">
-        <source media="(max-width:850px )" srcset="fts/oficinap.jpeg" type="image/jpeg" class="ofi-img">
-        <source media="(max-width: 1000px)" srcset="fts/oficinam.jpeg" type="image/jpeg" class="ofi-img">
-        <img src="fts/oficina.jpeg" alt="" class="ofi-img">
-      </picture>
-
-<div class="rec-about">
-
-  <h1 class="ti-about">Bem-vindo à <strong> Class Film!</strong></h1>    
-  <p class="p-rec-about">"<em>Especializados na aplicação  de películas de proteção solar em vidros de veículos, residências e empresas. Nossa equipe experiente e qualificada está pronta para oferecer um serviço de qualidade e garantir a satisfação de nossos clientes.</em>"</p>
-  <p class="p-rec-about">Confira alguns de nossos trabalhos em nossa galeria</p>
-  <a href="galery" class="bt-link"><div class="bt-format">
-  <h3 class="ti-bt">Galeria</h3>
-  <img src="fts/Logo_BT.png" alt="Galeria CLASS" class="img-bt1">
-  </div></a>
-  </div>
+     <a href="index.html"> <img src="fts/Logo_ClassFilm.png" alt="" class="logo-oficina"></a>
  
-   </main>
+     <input type="checkbox" id="menu" class="check-bt">
+     <label for="menu" class="menu-ativo">
+       <span class="bt-menu"></span>
+     </label>
+ 
+     <ul class="lista-menu">
+       <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+       <li class="menu-item"><a href="contato.html" class="menu-link">Contato</a></li>
+       <li class="menu-item"><a href="curso.html" class="menu-link">Nosso curso</a></li>
+     </ul>
+ 
+     <ul class="header-lista">
+       <li class="hdr-li"><a href="index.html">Home</a></li>
+       <li class="hdr-li"><a href="contato.html">Contato</a></li>
+       <li class="hdr-li"><a href="curso.html">Nosso Curso</a></li>
+     </ul>
+ 
+   </header>
+
+<body>
+     
+
+     
+
+     <main class="sobre">
+
+          <picture class="box-img">
+               <source media="(max-width:850px )" srcset="fts/oficinap.jpeg" type="image/jpeg" class="ofi-img">
+               <source media="(max-width: 1000px)" srcset="fts/oficinam.jpeg" type="image/jpeg" class="ofi-img">
+               <img src="fts/oficina.jpeg" alt="imagem oficina" class="oficina-imagem">
+          </picture>
+
+          <div class="descriçao-container">
+
+               <h1 class="titulo-home">Bem-vindo à <strong>Class Film!</strong></h1>
+               <p class="descriçao-home">"<em>Especializados na aplicação de películas de proteção solar em vidros de
+                         veículos, residências e empresas. Nossa equipe experiente e qualificada está pronta para
+                         oferecer um serviço de qualidade e garantir a satisfação de nossos clientes.</em>"</p>
+               <p class="descriçao-home">Confira alguns dos nossos trabalhos em nossa galeria.</p>
+
+               <a href="galeria.html" class="bt-link">
+
+                    <div class="bt-formato">
+                         <h3 class="titulo-bt">Galeria</h3>
+                         <img src="fts/Logo_BT.png" alt="Galeria CLASS" class="img-bt1">
+                    </div>
+               </a>
+          </div>
 
 
+     </main>
+     
+     <footer class="rodape">
+
+          <a href="contato.html"> <img src="fts/Logo_ClassFilm.png" alt="" class="logo-oficina"></a>
+
+         
+
+     </footer>
 </body>
+
 </html>
