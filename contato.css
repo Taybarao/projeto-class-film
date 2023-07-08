@@ -1,32 +1,27 @@
-
-
-
-
-
 .contatos {
-  width:100%;
+  width: 100%;
   margin: 60px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto ;
-  grid-template-areas: 
-  " video redes "
-  " sobre sobre "
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    " video redes "
+    " sobre sobre "
   ;
   row-gap: 5rem;
   text-transform: uppercase;
   color: #cccccc;
- 
+
 
 
 }
 
-.video-contato{
+.video-contato {
   height: 500px;
   margin: auto;
   box-shadow: 10px 10px 10px #000000;
- grid-area: video;
- border-radius: 30px;
+  grid-area: video;
+  border-radius: 30px;
 
 }
 
@@ -35,7 +30,7 @@
   grid-area: redes;
 }
 
-.descriçao-contato{
+.descriçao-contato {
   padding: 10px;
   font-size: 14px;
   font-weight: bold;
@@ -43,9 +38,9 @@
   background-color: white;
   color: black;
   text-transform: none;
-  margin:auto;
+  margin: auto;
   grid-area: sobre;
-   width: 90%;
+  width: 90%;
 }
 
 
@@ -130,7 +125,7 @@ td {
   border-radius: 30px;
 }
 
-  
+
 
 
 
@@ -149,14 +144,14 @@ td {
 
   }
 
- 
+
 
 }
 
 
 @media screen and (max-width:670px) {
 
-  .tabela-hr{
+  .tabela-hr {
     font-size: 14px;
   }
 
@@ -164,17 +159,17 @@ td {
 
   .contatos {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     row-gap: 2rem;
 
   }
 
-  .video-contato{
+  .video-contato {
     height: 350px;
 
-  
+
   }
 
   .info-ct {
@@ -221,10 +216,3 @@ td {
 
   }
 }
-
-
-
-
-
-
-
