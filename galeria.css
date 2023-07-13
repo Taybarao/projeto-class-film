@@ -27,7 +27,6 @@
     text-align: center;
     text-shadow: 5px 5px 5px red;
     font-size: 26px;
-    text-transform: uppercase;
     box-sizing: border-box;
     z-index: 10;
 }
