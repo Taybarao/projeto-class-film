@@ -11,9 +11,6 @@
   row-gap: 5rem;
   text-transform: uppercase;
   color: #cccccc;
-
-
-
 }
 
 .video-contato {
@@ -22,7 +19,6 @@
   box-shadow: 10px 10px 10px #000000;
   grid-area: video;
   border-radius: 30px;
-
 }
 
 .info-ct {
@@ -43,14 +39,11 @@
   width: 90%;
 }
 
-
-
 .name-ct {
   text-align: center;
   width: fit-content;
   font-size: 28px;
   padding: 25px;
-
 }
 
 .redes-ct {
@@ -67,7 +60,6 @@
 .li-rede {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .inf-ct {
@@ -81,7 +73,6 @@
 .link-ct:hover {
   transform: scale(1.2);
   transition: .5s;
-
 }
 
 .tabela-hr {
@@ -105,59 +96,26 @@ td {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .mapa-contato {
   border-radius: 30px;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width:850px) {
-
   .name-ct {
     font-size: 26px;
   }
 
   .inf-ct {
     font-size: 12px;
-
   }
-
-
-
 }
 
-
 @media screen and (max-width:670px) {
-
   .tabela-hr {
     font-size: 14px;
   }
-
-  
-
-
 
   .contatos {
     display: flex;
@@ -165,13 +123,10 @@ td {
     align-items: center;
     width: 100%;
     row-gap: 2rem;
-
   }
 
   .video-contato {
     height: 350px;
-
-
   }
 
   .info-ct {
@@ -180,10 +135,6 @@ td {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    
-
-
-
   }
 
   .name-ct {
@@ -191,8 +142,6 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
   }
 
   .redes-ct {
@@ -208,12 +157,9 @@ td {
     align-items: center;
     vertical-align: bottom;
     justify-content: space-between;
-
-
   }
 
   .inf-ct {
     padding: 10px 0;
-
   }
 }

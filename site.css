@@ -2,10 +2,6 @@
 @import url(galeria.css);
 @import url(curso.css);
 
-
-
-
-
 :root {
     --grey: #c0c0c0;
     --red: rgb(255, 129, 129);
@@ -20,8 +16,6 @@ body {
     background-position: center;
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
 .header {
@@ -40,8 +34,6 @@ body {
     margin: auto;
     max-width: 300px
 }
-
-
 
 .check-bt:checked~.lista-menu {
     margin-left: 55%;
@@ -68,8 +60,6 @@ body {
     display: none;
 }
 
-
-
 .lista-menu {
     flex-direction: column;
     align-items: center;
@@ -91,13 +81,11 @@ body {
     text-align: center;
     box-shadow: inset 0px 0px 10px rgb(240, 237, 237);
     transition: .2s;
-
 }
 
 .menu-item:hover {
     box-shadow: inset 5px 0px 25px rgba(141, 120, 196, 0.804);
     transition: .2s;
-
 }
 
 .header-lista {
@@ -124,17 +112,13 @@ body {
 .logo-oficina:hover {
     transition: 1s;
     opacity: 50%;
-
 }
 
 .sobre {
-
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-
 }
-
 
 .box-img {
     margin: 20px auto;
@@ -143,10 +127,7 @@ body {
 .oficina-imagem {
     border-radius: 10px 50px;
     box-shadow: 3px 3px 6px black;
-
 }
-
-
 
 .descriçao-container {
     margin-top: 35px;
@@ -167,9 +148,7 @@ body {
     font-size: 32px;
     font-weight: bold;
     box-shadow: 3px 3px 5px black;
-
 }
-
 
 .descriçao-home {
     margin: 20px auto;
@@ -178,8 +157,6 @@ body {
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 3px 3px 5px black;
-
-
 }
 
 .bt-formato {
@@ -191,10 +168,6 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px black, inset 3px 2px 2px wheat;
-
-
-
-
 }
 
 .bt-formato:hover {
@@ -204,7 +177,6 @@ body {
 
 .bt-link {
     align-self: center;
-
 }
 
 .titulo-bt {
@@ -212,7 +184,6 @@ body {
     font-size: 20px;
     grid-column: 1 /span2;
     align-self: center;
-
 }
 
 .img-bt1 {
@@ -233,18 +204,11 @@ body {
     opacity: 60%;
 }
 
-
-
 @media screen and (max-width:375px) {
-
     .descriçao-home {
         font-size: 12px;
     }
-
 }
-
-
-
 
 @media screen and (max-width:1000px) {
     .sobre {
@@ -255,12 +219,7 @@ body {
     .hdr-li {
         margin: 5px 15px 5px 15px;
     }
-
-
-
-
 }
-
 
 @media screen and (max-width:850px) {
     .logo-oficina {
@@ -277,8 +236,6 @@ body {
     .sobre {
         display: flex;
         flex-direction: column;
-
-
     }
 
     .box-img {
@@ -298,7 +255,6 @@ body {
         justify-content: space-evenly;
         align-items: center;
     }
-
 }
 
 @media screen and (max-width:670px) {
@@ -330,7 +286,6 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
     }
 
     .bt-menu {
@@ -346,7 +301,4 @@ body {
         justify-content: center;
         border-radius: 5px;
     }
-
-
-
 }
