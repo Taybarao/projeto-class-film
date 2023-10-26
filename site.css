@@ -30,6 +30,8 @@ body {
     z-index: 11;
 }
 
+
+
 .logo-oficina {
     margin: auto;
     max-width: 300px
@@ -177,6 +179,7 @@ body {
 
 .bt-link {
     align-self: center;
+    visibility: hidden;
 }
 
 .titulo-bt {

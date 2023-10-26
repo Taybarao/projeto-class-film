@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <title>Class Film</title>
   <link rel="stylesheet" href="reset.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -19,6 +20,7 @@
     <a href="index.html"> <img src="fts/Logo_ClassFilm.png" alt="" class="logo-oficina"></a>
 
     <input type="checkbox" id="menu" class="check-bt">
+    
     <label for="menu" class="menu-ativo">
       <span class="bt-menu"></span>
     </label>
@@ -38,6 +40,7 @@
   </header>
 
   <main class="galeria">
+    
 
 
 
@@ -74,15 +77,15 @@
           <input type="radio" name="bt-slide" id="item-4">
           <input type="radio" name="bt-slide" id="item-5">
 
-          <label for="item-1" class="s1"><img src="fts/slide1.jpeg" alt=""></label>
+          <label for="item-1" class="s1 efeito-scroll"><img src="fts/slide1.jpeg" alt=""></label>
 
-          <label for="item-2" class="s2"><img src="fts/slide2.jpeg" alt=""></label>
+          <label for="item-2" class="s2 efeito-scroll"><img src="fts/slide2.jpeg" alt=""></label>
 
-          <label for="item-3" class="s3"><img src="fts/slide3.jpeg" alt=""></label>
+          <label for="item-3" class="s3 efeito-scroll"><img src="fts/slide3.jpeg" alt=""></label>
 
-          <label for="item-4" class="s4"> <img src="fts/slide4.jpeg" alt=""></label>
+          <label for="item-4" class="s4 efeito-scroll"> <img src="fts/slide4.jpeg" alt=""></label>
 
-          <label for="item-5" class="s5"><img src="fts/slide5.jpeg" alt=""></label>
+          <label for="item-5" class="s5 efeito-scroll"><img src="fts/slide5.jpeg" alt=""></label>
 
 
         </div>
@@ -115,12 +118,12 @@
 
 
 
-          <label for="item_e1" class="t1"> <img src="fts/envelope2.jpg" alt=""></label>
+          <label for="item_e1" class="t1 efeito-scroll"> <img src="fts/envelope2.jpg" alt=""></label>
 
-          <label for="item_e2" class="t2">
+          <label for="item_e2" class="t2 efeito-scroll">
             <video src="fts/video1.mp4" loop autoplay muted class="video-envelope"></video></label>
 
-          <label for="item_e3" class="t3">
+          <label for="item_e3" class="t3 efeito-scroll">
             <img src="fts/envelope4.jpg" alt="">
             <label for=""></label>
 
@@ -154,15 +157,15 @@
           <input type="radio" name="bt-s" id="item_m2">
           <input type="radio" name="bt-s" id="item_m3">
 
-          <label for="item_m1" class="m1">
+          <label for="item_m1" class="m1 efeito-scroll">
             <img src="fts/moto1.jpeg" alt="">
           </label>
 
-          <label for="item_m2" class="m2">
+          <label for="item_m2" class="m2 efeito-scroll">
             <img src="fts/moto2.jpeg" alt="">
           </label>
 
-          <label for="item_m3" class="m3"><img src="fts/moto3.jpeg" alt="">
+          <label for="item_m3" class="m3 efeito-scroll"><img src="fts/moto3.jpeg" alt="">
           </label>
         </div>
       </div>
@@ -195,8 +198,7 @@
   </footer>
 
 
-
-
+<script src="galeria.js"></script>
 </body>
 
 </html>

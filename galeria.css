@@ -38,7 +38,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    visibility: hidden;
 }
+
+
 
 .efeito-titulo::before {
     content: '';
@@ -63,6 +66,7 @@
     width: 45%;
     height: 600px;
     margin: 20px;
+    visibility: hidden;
 }
 
 .container-slide {
@@ -77,6 +81,8 @@
     display: flex;
     align-items: center;
 }
+
+
 
 .efeito {
     width: 100%;
@@ -104,6 +110,11 @@ input[type=radio] {
 .img-prev {
     transform: scale(0.7);
     padding: 0 5px;
+    visibility: hidden;
+}
+
+.efeito-scroll{
+    visibility: hidden;
 }
 
 .img-prev:hover {
@@ -127,6 +138,21 @@ input[type=radio] {
     box-shadow: 10px 10px 10px rgb(255, 255, 255);
     opacity: 45%;
     transition: 1s;
+    animation: piscar 4s infinite;
+    
+}
+
+
+
+@keyframes piscar {
+    0%, 100%
+     {
+        box-shadow: 10px 10px 10px red;
+    
+    }
+    50% {
+        box-shadow: 10px 10px 10px rgb(15, 6, 6);
+    }
 }
 
 .video-envelope {
