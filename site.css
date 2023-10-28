@@ -11,10 +11,7 @@
 }
 
 body {
-    background-image: url(fts/must.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
 

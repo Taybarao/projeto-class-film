@@ -4,12 +4,43 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    padding: 0 0 40px 0;
     margin-top: 100px;
+ 
 }
+
+.fundo-slide{
+    background-image: url(https://wallpapercave.com/wp/wp5750800.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.fundo-oficina{
+    background-image: url(https://wallpapers.com/images/hd/black-lamborghini-on-the-road-m89k07ilu405a8ei.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundo-envelope{
+    background-image: url(https://neycostaautocenter.com.br/wp-content/uploads/2023/08/vibrant-luxury-sports-cars-row-illuminate-city-streets-generated-by-artificial-intelligence1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .fundo-moto{
+    background-image: url(https://wallpapers.net/ducati-diavel-bike-hd-wallpaper-for-desktop-mobiles/download/3840x2160.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
 
 .videos {
     margin-top: 100px;
+    width: 90%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -38,7 +69,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    visibility: hidden;
 }
 
 
@@ -66,7 +96,6 @@
     width: 45%;
     height: 600px;
     margin: 20px;
-    visibility: hidden;
 }
 
 .container-slide {
@@ -110,12 +139,8 @@ input[type=radio] {
 .img-prev {
     transform: scale(0.7);
     padding: 0 5px;
-    visibility: hidden;
 }
 
-.efeito-scroll{
-    visibility: hidden;
-}
 
 .img-prev:hover {
     transform: scale(1.1);
@@ -136,9 +161,9 @@ input[type=radio] {
 .m3 {
     transform: scale(0.6);
     box-shadow: 10px 10px 10px rgb(255, 255, 255);
-    opacity: 45%;
     transition: 1s;
-    animation: piscar 4s infinite;
+    opacity: 45%;
+    animation: piscar 10s infinite;
     
 }
 
@@ -147,11 +172,11 @@ input[type=radio] {
 @keyframes piscar {
     0%, 100%
      {
-        box-shadow: 10px 10px 10px red;
+        box-shadow: 25px 20px 10px rgba(157, 157, 157, 0.582);
     
     }
     50% {
-        box-shadow: 10px 10px 10px rgb(15, 6, 6);
+        box-shadow: -15px 20px 10px rgba(120, 1, 1, 0.612);
     }
 }
 
@@ -162,6 +187,9 @@ input[type=radio] {
 
 #item-1:checked~.s1 {
     margin-left: 0;
+    transform: scale(1);
+    opacity: 100%;
+    border-radius: 10px;
 }
 
 #item-2:checked~.s1 {
@@ -181,43 +209,36 @@ input[type=radio] {
     margin-left: -1360px;
 }
 
-#item-1:checked~.s1 {
-    transform: scale(1);
-    opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
-}
 
 #item-2:checked~.s2 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 #item-3:checked~.s3 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 #item-4:checked~.s4 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 #item-5:checked~.s5 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 #item_e1:checked~.t1 {
     margin-left: 0;
+    transform: scale(1);
+    opacity: 100%;
+    border-radius: 10px;
 }
 
 #item_e2:checked~.t1 {
@@ -229,37 +250,25 @@ input[type=radio] {
     margin-left: -680px;
 }
 
-#item_e1:checked~.t1 {
-    transform: scale(1);
-    opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
-}
 
 #item_e2:checked~.t2 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 #item_e3:checked~.t3 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
-.hornet {
-    margin-top: 40px;
-    width: 340px;
-    height: 425px;
-    border-radius: 5px;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-}
 
 #item_m1:checked~.m1 {
     margin-left: 0;
+    transform: scale(1);
+    opacity: 100%;
+    border-radius: 10px;
 }
 
 #item_m2:checked~.m1 {
@@ -271,24 +280,15 @@ input[type=radio] {
     margin-left: -680px;
 }
 
-#item_m1:checked~.m1 {
-    transform: scale(1);
-    opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    border-radius: 10px;
-}
-
 #item_m2:checked~.m2 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
 #item_m3:checked~.m3 {
     transform: scale(1);
     opacity: 100%;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 10px;
 }
 
