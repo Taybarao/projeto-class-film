@@ -120,7 +120,9 @@ body {
 }
 
 .box-img {
-    margin: 20px auto;
+    margin: 100px auto 20px auto;
+    box-shadow: 1px 2px 100px rgba(212, 0, 0, 0.515);
+    border-radius: 10px 50px;
 }
 
 .oficina-imagem {
@@ -146,7 +148,7 @@ body {
     padding: 10px 20px;
     font-size: 32px;
     font-weight: bold;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 1px 2px 50px rgba(219, 220, 221, 0.26);
 }
 
 .descriçao-home {
@@ -155,7 +157,7 @@ body {
     padding: 10px 20px;
     font-weight: bold;
     border-radius: 5px;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 1px 2px 50px rgba(221, 219, 219, 0.26);
 }
 
 .bt-formato {
